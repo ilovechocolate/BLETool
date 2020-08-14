@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"  >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/service_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/service_more"
+            android:layout_width="@dimen/padding30"
+            android:layout_height="@dimen/padding30"
+            android:layout_marginEnd="@dimen/padding30"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/ic_less"/>
+
+        <TextView
+            android:id="@+id/service_uuid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding20"
+            android:layout_marginTop="20dp"
+            android:text="UUID : "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/service_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding20"
+            android:layout_marginBottom="@dimen/padding10"
+            android:text="Type : "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/service_proto" />
+
+        <TextView
+            android:id="@+id/service_proto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Service Protocol : "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/service_uuid" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/service_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding1"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:id="@+id/character_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding10"
+        android:orientation="vertical"/>
+
+
+</LinearLayout>

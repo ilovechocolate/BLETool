@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/padding20"
+    android:orientation="vertical"
+    tools:context=".ui.AdvertiseFragment">
+
+    <Switch
+        android:id="@+id/advertise_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding10"
+        android:padding="@dimen/padding5"
+        android:clickable="false"
+        android:text="Advertise State : " />
+
+    <Switch
+        android:id="@+id/connecttable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding5"
+        android:layout_marginTop="@dimen/padding10"
+        android:clickable="false"
+        android:text="Connectable : " />
+
+    <Button
+        android:id="@+id/advertise_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding5"
+        android:layout_marginTop="@dimen/padding15"
+        android:text="Start Advertise" />
+
+    <Switch
+        android:id="@+id/connect_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding15"
+        android:padding="@dimen/padding5"
+        android:clickable="false"
+        android:text="Connect State" />
+
+    <TextView
+        android:id="@+id/device_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Device Address : " />
+
+    <Button
+        android:id="@+id/server_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding15"
+        android:padding="@dimen/padding5"
+        android:text="Start GATT SERVER" />
+
+    <Button
+        android:id="@+id/add_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding15"
+        android:padding="@dimen/padding5"
+        android:text="Add Demo Service" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sservice_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

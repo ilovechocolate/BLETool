@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/padding20"
+    android:orientation="vertical"
+    tools:context=".ui.HomeFragment">
+
+    <Switch
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Location Permissions" />
+
+    <Switch
+        android:id="@+id/ble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:layout_marginTop="@dimen/padding40"
+        android:text="Bluetooth Status" />
+
+    <Button
+        android:id="@+id/getBluetoothInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding30"
+        android:text="get Bluetooth Info" />
+
+    <TextView
+        android:id="@+id/bluetoothinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding10"/>
+
+</LinearLayout>

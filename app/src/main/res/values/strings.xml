@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BLETool</string>
+    <string name="title_home">Base</string>
+    <string name="title_advertise">Advertise</string>
+    <string name="title_scan">Scan</string>
+
+    <string name="swipe">swipe and refresh</string>
+</resources>
